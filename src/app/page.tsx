@@ -429,7 +429,7 @@ export default function Home() {
                   <li>• Miraz (Media Team)</li>
                 </ul>
               </motion.div>
-            </div>
+              </div>
           </motion.div>
         </div>
       </section>
