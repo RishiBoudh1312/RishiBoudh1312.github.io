@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .heading {
+    @apply text-4xl sm:text-5xl font-bold mb-8;
+  }
+  
+  .subheading {
+    @apply text-xl sm:text-2xl text-secondary mb-6;
+  }
+}
+
+/* Custom cursor styles */
+.custom-cursor {
+  @apply fixed w-4 h-4 bg-primary rounded-full pointer-events-none z-50 mix-blend-difference;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+}
+
+.custom-cursor.active {
+  @apply w-8 h-8;
+} 
